@@ -1,0 +1,160 @@
+/* Enter your custom styles here */
+
+.css{
+    margin : 20px 0 0 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 60%;
+}
+
+.css1{
+    font-size: 2rem;
+}
+
+.css2{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-left: 250px;
+}
+
+.css3{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.css4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+}
+
+.css5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 118.5px;
+}
+
+.css6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 169.5px;
+}
+
+.css7{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 153px
+}
+
+.css8{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 73px
+}
+
+.css9{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 112px
+}
+
+.css10{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 154px
+}
+
+.css11{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 145px
+}
+
+.css12{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 147px
+}
+
+.css13{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 140px
+}
+
+.css14{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 169px
+}
+
+.css15{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 184px
+}
+
+.css16{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 147px
+}
+
+.css17{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px
+}
+
+.css18{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 125px
+}
+
+.css19{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 87px
+}
+
+.css20{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 157px
+}
+
+.css21{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 119px
+}
+
+.css22{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 2rem
+}

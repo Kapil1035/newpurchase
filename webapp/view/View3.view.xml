@@ -1,0 +1,116 @@
+<mvc:View
+    controllerName="project3.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <f:SimpleForm id="_IDGenSimpleForm1">
+            <VBox
+                id="_IDGenVBox1"
+                class="sapUiSmallMargin"
+            >
+                <HBox
+                    id="_IDGenHBox1"
+                    class="css22"
+                >
+                    <VBox id="_IDGenVBox2">
+                        <Label
+                            id="_IDGenLabel1"
+                            text="Company Code :"
+                        />
+                        <Input id="company_code" />
+                    </VBox>
+                    <VBox id="_IDGenVBox3">
+                        <Label
+                            id="_IDGenLabel2"
+                            text="Vendor :"
+                        />
+                        <Input id="vendor" />
+                    </VBox>
+                </HBox>
+
+                <HBox
+                    id="_IDGenHBox2"
+                    class="css22"
+                >
+                    <VBox id="_IDGenVBox4">
+                        <Label
+                            id="_IDGenLabel3"
+                            text="Document Type :"
+                        />
+
+                        <Input id="Document_Type" />
+                    </VBox>
+
+                    <VBox id="_IDGenVBox5">
+                        <Label
+                            id="_IDGenLabel4"
+                            text="Language :"
+                        />
+                        <Input id="language" />
+                    </VBox>
+                </HBox>
+
+                <HBox
+                    id="_IDGenHBox3"
+                    class="css22"
+                >
+                    <VBox id="_IDGenVBox6">
+                        <Label
+                            id="_IDGenLabel5"
+                            text="Purchase Organisation :"
+                        />
+                        <Input id="Purchase_Organization" />
+                    </VBox>
+
+                    <VBox id="_IDGenVBox7">
+                        <Label
+                            id="_IDGenLabel6"
+                            text="Purchase Group :"
+                        />
+                        <Input id="Purchase_Group" />
+                    </VBox>
+                    
+                </HBox>
+
+                <HBox
+                    id="_IDGenHBox4"
+                    class="css22"
+                >
+                    <VBox id="Currency">
+                        <Label
+                            id="_IDGenLabel7"
+                            text="Currency :"
+                        />
+                        <Input id="Currency1" />
+                    </VBox>
+
+                    <VBox id="Start_Date1">
+                        <Label
+                            id="_IDGenLabel8"
+                            text="VPER_START :"
+                        />
+                        <Input id="Start_Date" />
+                    </VBox>
+                </HBox>
+                <HBox
+                    id="_IDGenHBox5"
+                    class="css22"
+                >
+                    <VBox id="_IDGenVBox10">
+                        <Label
+                            id="_IDGenLabel10"
+                            text="VPER_END :"
+                        />
+                        <Input id="hh" />
+                    </VBox>
+                </HBox>
+            </VBox>
+        </f:SimpleForm>
+    </Page>
+</mvc:View>
