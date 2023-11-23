@@ -18,16 +18,16 @@
                     id="_IDGenHBox1"
                     class="css22"
                 >
-                    <VBox id="_IDGenVBox2">
+                    <VBox id="company_code1">
                         <Label
-                            id="_IDGenLabel1"
+                            id="company_code2"
                             text="Company Code :"
                         />
-                        <Input id="company_code" />
+                        <Input  id="company_code" />
                     </VBox>
-                    <VBox id="_IDGenVBox3">
+                    <VBox id="vendor1">
                         <Label
-                            id="_IDGenLabel2"
+                            id="vendor2"
                             text="Vendor :"
                         />
                         <Input id="vendor" />
@@ -38,18 +38,18 @@
                     id="_IDGenHBox2"
                     class="css22"
                 >
-                    <VBox id="_IDGenVBox4">
+                    <VBox id="Document_Type1">
                         <Label
-                            id="_IDGenLabel3"
+                            id="Document_Type2"
                             text="Document Type :"
                         />
 
                         <Input id="Document_Type" />
                     </VBox>
 
-                    <VBox id="_IDGenVBox5">
+                    <VBox id="language1">
                         <Label
-                            id="_IDGenLabel4"
+                            id="language2"
                             text="Language :"
                         />
                         <Input id="language" />
@@ -60,17 +60,17 @@
                     id="_IDGenHBox3"
                     class="css22"
                 >
-                    <VBox id="_IDGenVBox6">
+                    <VBox id="Purchase_Organization1">
                         <Label
-                            id="_IDGenLabel5"
+                            id="Purchase_Organization2"
                             text="Purchase Organisation :"
                         />
                         <Input id="Purchase_Organization" />
                     </VBox>
 
-                    <VBox id="_IDGenVBox7">
+                    <VBox id="Purchase_Group1">
                         <Label
-                            id="_IDGenLabel6"
+                            id="Purchase_Group2"
                             text="Purchase Group :"
                         />
                         <Input id="Purchase_Group" />
@@ -82,17 +82,17 @@
                     id="_IDGenHBox4"
                     class="css22"
                 >
-                    <VBox id="Currency">
+                    <VBox id="Currency1">
                         <Label
-                            id="_IDGenLabel7"
+                            id="Currency2"
                             text="Currency :"
                         />
-                        <Input id="Currency1" />
+                        <Input id="Currency" />
                     </VBox>
 
                     <VBox id="Start_Date1">
                         <Label
-                            id="_IDGenLabel8"
+                            id="Start_Date2"
                             text="VPER_START :"
                         />
                         <Input id="Start_Date" />
@@ -102,15 +102,19 @@
                     id="_IDGenHBox5"
                     class="css22"
                 >
-                    <VBox id="_IDGenVBox10">
+                    <VBox id="End_Date1">
                         <Label
-                            id="_IDGenLabel10"
+                            id="End_Date2"
                             text="VPER_END :"
                         />
-                        <Input id="hh" />
+                        <Input id="End_Date" />
                     </VBox>
                 </HBox>
             </VBox>
+
+            <Button id="button" text="Go" press="go" width="50px"></Button>
         </f:SimpleForm>
+
+
     </Page>
 </mvc:View>

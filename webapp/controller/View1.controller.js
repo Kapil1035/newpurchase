@@ -6,15 +6,15 @@ sap.ui.define([
      */
     function (Controller) {
         "use strict";
-        var company_code;
-        var Document_Type;
-        var vendor;
-        var language;;
-        var Purchase_Organization;
-        var Purchase_Group;
-        var Currency;
-        var Start_Date;
-        var End_Date;
+        var company_code="Mandatory";
+        var Document_Type="Mandatory";
+        var vendor="Mandatory";
+        var language="Mandatory";
+        var Purchase_Organization="Mandatory";
+        var Purchase_Group="Mandatory";
+        var Currency="Mandatory";
+        var Start_Date="Mandatory";
+        var End_Date="Mandatory";
 
         return Controller.extend("project3.controller.View1", {
             onInit: function () {

@@ -20,6 +20,7 @@ sap.ui.define([
         var End_Date;
         var arrKey=[]
         var arrValue=[]
+        var mandatory=false;
 
 
         return Controller.extend("project3.controller.View3", {
@@ -27,7 +28,11 @@ sap.ui.define([
                 sap.ui.core.UIComponent.getRouterFor(this).getRoute('RouteView3').attachPatternMatched(this._onRouteMatched, this)
             },
 
+
+          
+
             _onRouteMatched: function (oEvent) {
+                arrValue=[]
                  oEventValue=oEvent.mParameters.arguments.invoicePath;
                  oEventObj=JSON.parse(window.decodeURIComponent(oEventValue))
                  company_code=oEventObj.company_code;
@@ -39,12 +44,27 @@ sap.ui.define([
                  Currency=oEventObj.Currency;
                  Start_Date=oEventObj.Start_Date;
                  End_Date=oEventObj.End_Date;
+          
+
                  arrKey.push("company_code","Document_Type","vendor","language","Purchase_Organization","Purchase_Group","Currency","Start_Date","End_Date")
+                
                  arrValue.push(company_code,Document_Type,vendor,language,Purchase_Organization,Purchase_Group,Currency,Start_Date,End_Date)
+                 console.log(arrValue);
                  for(let i=0;i<arrKey.length;i++){
                  if(arrValue[i]=="Hide"){
-                    this.getView().byId(arrKey[i]).setVisible(false)
+                    this.getView().byId(`${arrKey[i]}1`).setVisible(false)
                  }
+                 else if(arrValue[i]=="Mandatory"){
+                    this.getView().byId(`${arrKey[i]}2`).setRequired(true)
+                //    console.log(this.getView().byId(arrKey[i]).getValue().length)
+
+                 }
+                 else if(arrValue[i]=="Display"){
+                    this.getView().byId(arrKey[i]).setValue("abc")
+                    this.getView().byId(arrKey[i]).setEnabled(false)
+ 
+                  }
+
                     // console.log(this.getView().byId(arr[i]));
                  }
 
@@ -61,6 +81,30 @@ sap.ui.define([
                 //  console.log("End_Date",End_Date);
 
 
-            }
+            },
+            go:function(){
+                console.log("hello");
+                for(let i=0;i<arrKey.length;i++){
+                    if(arrValue[i]=="Mandatory"){
+                  
+                       if(this.getView().byId(arrKey[i]).getValue().length==0){
+                        mandatory=false
+                       }
+                       else{
+                        mandatory=true
+                       }
+    
+                     }
+                    }
+                
+                    if(mandatory==false){
+                  alert("Please fill the mandatory field")
+                    }
+                    else{
+                        const oRouter = this.getOwnerComponent().getRouter();
+                        oRouter.navTo("RouteView1")
+                    }
+
+            },
         });
     });
