@@ -1,0 +1,22 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+        header="Purchase Contract" press="onPress">
+        <TileContent id="_IDGenTileContent1" >
+        </TileContent>
+    </GenericTile>
+        <GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+         header="Sales Contract"  press="onSales" >
+        <TileContent id="_IDGenTileContent2"  >
+        </TileContent>
+    </GenericTile>
+      <GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+         header="Configuration" >
+        <TileContent id="_IDGenTileContent3"  >
+        </TileContent>
+    </GenericTile>
+
+    </Page>
+</mvc:View>

@@ -1,0 +1,20 @@
+<mvc:View controllerName="purchaseannotate.controller.tile"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    width="50%" >
+      
+<GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+header="Purchase Contract"  press="navigatetosplit">
+
+
+</GenericTile>
+
+<GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+header="Sales Contract"  press="navigatetosplit">
+        <TileContent id="_IDGenTileContent1" >
+        </TileContent>
+    </GenericTile>
+       
+    
+</mvc:View>
+ 

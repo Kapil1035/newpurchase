@@ -7,16 +7,17 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("purchaseannotate.controller.View1", {
+        return Controller.extend("project1.controller.View1", {
             onInit: function () {
 
             },
-            onPage2: function(oEvent) {
-                const oItem = oEvent.getSource();
+            onPress:function() {
                 const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("RouteView2", {
-                    invoicePath: window.encodeURIComponent(oItem.getBindingContext().getPath().substr(1))
-                });
+                oRouter.navTo("RouteHome");
             }
+            // onSales:function() {
+            //     const oRouter1 = this.getOwnerComponent().getRouter();
+            //     oRouter1.navTo("RouteSales");
+            // }
         });
     });

@@ -1,31 +1,28 @@
-<mvc:View xmlns:form="sap.ui.layout.form" xmlns:tnt="sap.tnt" 
-xmlns:l="sap.ui.layout" controllerName="purchaseannotate.controller.View2"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+<mvc:View xmlns:l="sap.ui.layout"
+    controllerName="project1.controller.Purchase"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
     xmlns="sap.m"
-        xmlns:core="sap.ui.core"
-    >
-            <l:FixFlex id="_IDGenFixFlex1" class="fixFlexHorizontal detail_page" vertical="false" >
+    xmlns:f="sap.f"
+      xmlns:core="sap.ui.core"
+>
+
+ <l:FixFlex id="_IDGenFixFlex1" class="fixFlexHorizontal detail_page" vertical="false" >
  
         <l:flexContent>
-            <Panel id="_IDGenPanel1" width="90%" height="auto" class="genInfo sapUiResponsiveMargin"
-             accessibleRole="Region">
+            <Panel id="_IDGenPanel1" width="90%" height="auto" class="genInfo sapUiResponsiveMargin" accessibleRole="Region">
                 <ObjectHeader id="_IDGenObjectHeader1"
                          title="General Information"
                          icon="sap-icon://information">
                 </ObjectHeader>
                  <FlexBox id="flex1" alignItems="Center" justifyContent="SpaceAround" class="genInfo">
                  <VBox id="_IDGenVBox1" >
-                <Label id="label1" text="Customer/Supplier" labelFor="suggestionsMultiComboBox"></Label>
-                 <!-- <MultiInput id="singleInput" placeholder="Enter Supplier Id" valueHelpOnly="true"
-                    valueHelpRequest=".onSingleConditionVHRequested" /> -->
-                 	<Select
-						
-						forceSelection="false"
-						
-						items="{
-							path: '/PurchaseOrders'
-						}">
-					<core:Item key="{Supplier}" text="{Supplier}" />
+                <Label id="label1" text="Customer" labelFor="suggestionsMultiComboBox"></Label>
+                
+                 	<Select id="_IDGenSelect1"
+						>
+					<core:Item id="_IDGenem11" text="customer"/>
 				</Select>
                  <Label id="label5" text="Service Type" labelFor="suggestionsMultiComboBox"></Label>
                  <ComboBox id="_IDGenComboBox5" value="Firm"
@@ -117,5 +114,6 @@ xmlns:l="sap.ui.layout" controllerName="purchaseannotate.controller.View2"
                 </FlexBox>
             </Panel>
         </l:flexContent>
-    </l:FixFlex>
+    </l:FixFlex> 
+   
 </mvc:View>

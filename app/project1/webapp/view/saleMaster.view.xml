@@ -1,0 +1,21 @@
+<mvc:View xmlns:f="sap.f" controllerName="project1.controller.saleMaster"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+     <VBox id="_IDGenVBox1">    	
+      <List id="_IDGenList1" >
+       <ObjectListItem id="_IDGenObjectListItem1" title="Home" type="Navigation" press="onGeneral"></ObjectListItem>
+      </List>         
+           </VBox>
+       <VBox id="_IDGenVBox2">    	
+      <List id="_IDGenList2" >
+       <ObjectListItem id="_IDGenObjectListItem2" title="Header" type="Navigation" press="onHeader"></ObjectListItem>
+      </List>         
+           </VBox>
+       <VBox id="_IDGenVBox3">    	
+      <List id="_IDGenList3" >
+       <ObjectListItem id="_IDGenObjectListItem3" title="Items" type="Navigation" press="onItems"></ObjectListItem>
+      </List>         
+           </VBox>
+   
+</mvc:View>

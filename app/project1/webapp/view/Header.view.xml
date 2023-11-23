@@ -1,0 +1,30 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:f="sap.f" controllerName="project1.controller.Header"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <!-- <ObjectHeader id="_IDGenObjectHeader1" title="Header Details"></ObjectHeader> -->
+    <form:SimpleForm id="_IDGenSimpleForm1" title="Header">
+    <HBox id="_IDGenHBox1"  >
+    <VBox id="_IDGenVBox1" class="sapUiMediumMarginBegin"  >
+      <Label id="_IDGenLabel1" text="Document Type:"></Label>
+      <Input id="_IDGenInput1" value=""></Input>
+      <Label id="_IDGenLabel2" text="Supplier:"></Label>
+      <Input id="_IDGenInput2" value=""></Input>
+      <Label id="_IDGenLabel3" text="Purchase Org:"></Label>
+      <Input id="_IDGenInput3" value=""></Input>
+       <Label id="_IDGenLabel4" text="Purchase Group:"></Label>
+      <Input id="_IDGenInput4" value=""></Input>
+      </VBox>
+    <VBox id="_IDGenVBox2" class="sapUiLargeMarginBeginEnd" >
+     
+      <Label id="_IDGenLabel5" text="Company Code:"></Label>
+      <Input id="_IDGenInput5" value=""></Input>
+      <Label id="_IDGenLabel6" text="Start Date:"></Label>
+      <DatePicker id="_IDGenDatePicker1"  ></DatePicker>
+      <Label id="_IDGenLabel7" text="End Date:"></Label>
+      <DatePicker id="_IDGenDatePicker2" ></DatePicker>
+      </VBox>
+      </HBox>
+    </form:SimpleForm>
+   
+</mvc:View>

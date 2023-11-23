@@ -21,7 +21,10 @@
   "scripts": {
     "start": "cds-serve",
     "watch-purchaseannotate": "cds watch --open purchaseannotate/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-projannotatio": "cds watch --open projannotatio/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-projannotatio": "cds watch --open projannotatio/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-purchasecont": "cds watch --open purchasecont/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-icontab": "cds watch --open icontab/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {

@@ -1,7 +1,7 @@
 {
   "_version": "1.58.0",
   "sap.app": {
-    "id": "purchaseannotate",
+    "id": "project1",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.11.4",
-      "toolsId": "1c366b63-b157-4b39-bf87-dc8fce07459f"
+      "toolsId": "9a13c40b-2a56-41ca-b1f8-154dc6fb820c"
     },
     "dataSources": {
       "mainService": {
@@ -66,7 +66,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "purchaseannotate.i18n.i18n"
+          "bundleName": "project1.i18n.i18n"
         }
       },
       "": {
@@ -89,48 +89,61 @@
     },
     "routing": {
       "config": {
-        "routerClass": "sap.m.routing.Router",
+        "routerClass": "sap.f.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "purchaseannotate.view",
-        "controlAggregation": "pages",
-        "controlId": "app",
-        "clearControlAggregation": false
+        "viewPath": "project1.view",
+        "controlId": "flex",
+        "transition": "slide"
       },
       "routes": [
         {
           "name": "RouteView1",
-          "pattern": ":?query:",
+          "pattern": "",
+          "layout": "OneColumn",
           "target": [
-            "TargetView1","TargetView2"
+            "TargetView1"
           ]
         },
         {
-          "name": "RouteView2",
-          "pattern": "page2/{invoicePath}",
+          "name": "RouteHome",
+          "pattern": "Home",
+          "layout": "TwoColumnsMidExpanded",
           "target": [
-            "TargetView2"
+            "HomeTarget",
+            "PurchaseTarget"
           ]
         },
         {
-          "name": "RouteView3",
-          "pattern": "page3",
-          "target": [
-            "TargetView3"
+          "name": "RoutePurchase",
+          "pattern": "Purchase/Details",
+          "layout": "TwoColumnsMidExpanded",
+          "target": [ 
+            "HomeTarget",
+            "PurchaseTarget"
           ]
         },
         {
-          "name": "RouteView4",
-          "pattern": "page4",
+          "name": "RouteSales",
+          "pattern": "sales",
           "target": [
             "TargetView4"
           ]
         },
         {
-          "name": "RouteView5",
-          "pattern": "page5",
-          "target": [
+          "name": "RouteHeader",
+          "pattern": "header",
+          "layout": "TwoColumnsMidExpanded",
+          "target": [ "HomeTarget",
             "TargetView5"
+          ]
+        },
+        {
+          "name": "RouteItems",
+          "pattern": "items",
+          "layout": "TwoColumnsMidExpanded",
+          "target": [ "HomeTarget",
+            "TargetView6"
           ]
         }
       ],
@@ -138,47 +151,49 @@
         "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
-          "controlAggregation": "masterPages",
+          "controlAggregation": "beginColumnPages",
           "viewId": "View1",
-          "viewName": "View1",
-          "viewLevel": 1
+          "viewName": "View1"
         },
-        "TargetView2": {
+        "HomeTarget": {
           "viewType": "XML",
           "transition": "slide",
-          "controlAggregation": "detailPages",
+          "controlAggregation": "beginColumnPages",
           "viewId": "View2",
-          "viewName": "View2",
-          "viewLevel": 2
+          "viewName": "Home"
         },
-        "TargetView3": {
+        "PurchaseTarget": {
           "viewType": "XML",
           "transition": "slide",
-          "clearControlAggregation": false,
+          "controlAggregation": "midColumnPages",
           "viewId": "View3",
-          "viewName": "View3",
-          "viewLevel": 3
+          "viewName": "Purchase"
         },
         "TargetView4": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "View4",
-          "viewName": "View4",
-          "viewLevel": 4
+          "viewName": "Sales"
         },
         "TargetView5": {
           "viewType": "XML",
           "transition": "slide",
-          "clearControlAggregation": false,
+          "controlAggregation": "midColumnPages",
           "viewId": "View5",
-          "viewName": "View5",
-          "viewLevel": 5
+          "viewName": "Header"
+        },
+        "TargetView6": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "midColumnPages",
+          "viewId": "View6",
+          "viewName": "Items"
         }
       }
     },
     "rootView": {
-      "viewName": "purchaseannotate.view.App",
+      "viewName": "project1.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

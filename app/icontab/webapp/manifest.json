@@ -1,7 +1,7 @@
 {
   "_version": "1.58.0",
   "sap.app": {
-    "id": "purchaseannotate",
+    "id": "icontab",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.11.4",
-      "toolsId": "1c366b63-b157-4b39-bf87-dc8fce07459f"
+      "toolsId": "96eda84c-e35f-4ea8-8ce7-44763d060515"
     },
     "dataSources": {
       "mainService": {
@@ -66,7 +66,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "purchaseannotate.i18n.i18n"
+          "bundleName": "icontab.i18n.i18n"
         }
       },
       "": {
@@ -92,7 +92,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "purchaseannotate.view",
+        "viewPath": "icontab.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -102,35 +102,14 @@
           "name": "RouteView1",
           "pattern": ":?query:",
           "target": [
-            "TargetView1","TargetView2"
+            "TargetView1"
           ]
         },
         {
           "name": "RouteView2",
-          "pattern": "page2/{invoicePath}",
+          "pattern": "view2",
           "target": [
             "TargetView2"
-          ]
-        },
-        {
-          "name": "RouteView3",
-          "pattern": "page3",
-          "target": [
-            "TargetView3"
-          ]
-        },
-        {
-          "name": "RouteView4",
-          "pattern": "page4",
-          "target": [
-            "TargetView4"
-          ]
-        },
-        {
-          "name": "RouteView5",
-          "pattern": "page5",
-          "target": [
-            "TargetView5"
           ]
         }
       ],
@@ -138,47 +117,21 @@
         "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
-          "controlAggregation": "masterPages",
+          "clearControlAggregation": false,
           "viewId": "View1",
-          "viewName": "View1",
-          "viewLevel": 1
+          "viewName": "View1"
         },
         "TargetView2": {
           "viewType": "XML",
           "transition": "slide",
-          "controlAggregation": "detailPages",
+          "clearControlAggregation": false,
           "viewId": "View2",
-          "viewName": "View2",
-          "viewLevel": 2
-        },
-        "TargetView3": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "View3",
-          "viewName": "View3",
-          "viewLevel": 3
-        },
-        "TargetView4": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "View4",
-          "viewName": "View4",
-          "viewLevel": 4
-        },
-        "TargetView5": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "View5",
-          "viewName": "View5",
-          "viewLevel": 5
+          "viewName": "View2"
         }
       }
     },
     "rootView": {
-      "viewName": "purchaseannotate.view.App",
+      "viewName": "icontab.view.App",
       "type": "XML",
       "async": true,
       "id": "App"
